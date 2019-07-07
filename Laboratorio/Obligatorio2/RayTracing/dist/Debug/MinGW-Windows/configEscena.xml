@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- archivo de configuracion de escena -->
+<escena name="config">
+    
+    <camara ancho="1024" alto="768" bitmaps="32" ux="20.5" uy="15" antiLevel="2" prof="4">
+        <posicion x="0.0" y="1.0" z="15.0"></posicion>
+    </camara>
+    
+    <materiales>
+        <material id="0" especular="1.0" difusidad="0.5" reflexion ="0.0" transmision="0.0" ambiente="0.3" refraccion="0.0" power="60">
+            <color r="0.0" g="1.0" b="0.0" a="1.0"></color>
+        </material>
+        <material id="1" especular="1.0" difusidad="0.1" reflexion ="0.1" transmision="1.0" ambiente="0.0" refraccion="1.5" power="60">
+            <color r="1.0" g="1.0" b="1.0" a="1.0"></color>
+        </material>
+        <material id="2" especular="1.0" difusidad="0.0" reflexion ="1.0" transmision="0.0" ambiente="0.0" refraccion="0.0" power="60">
+            <color r="0.0" g="0.0" b="0.0" a="1.0"></color>
+        </material>
+        <material id="3" especular="0.0" difusidad="1.0" reflexion ="0.0" transmision="0.0" ambiente="0.3" refraccion="0.0" power="60">
+            <color r="1.0" g="1.0" b="1.0" a="1.0"></color>
+        </material>
+        <material id="4" especular="0.5" difusidad="0.1" reflexion ="0.0" transmision="0.0" ambiente="0.3" refraccion="0.0" power="60">
+            <color r="1.0" g="0.0" b="0.0" a="1.0"></color>
+        </material>
+        <material id="5" especular="0.5" difusidad="0.1" reflexion ="0.0" transmision="0.0" ambiente="0.3" refraccion="0.0" power="60">
+            <color r="0.0" g="1.0" b="0.0" a="1.0"></color>
+        </material>
+        <material id="6" especular="0.8" difusidad="0.5" reflexion ="0.2" transmision="0.0" ambiente="0.3" refraccion="0.0" power="60">
+            <color r="0.1" g="0.1" b="0.1" a="1.0"></color>
+        </material>
+        <material id="7" especular="0.0" difusidad="0.7" reflexion ="0.2" transmision="0.0" ambiente="0.3" refraccion="0.0" power="60">
+            <color r="1.0" g="1.0" b="1.0" a="1.0"></color>
+        </material>		
+        <material id="8" especular="0.5" difusidad="0.8" reflexion ="0.0" transmision="0.0" ambiente="0.3" refraccion="0.0" power="60">
+            <color r="1.0" g="1.0" b="0.0" a="1.0"></color>
+        </material>	
+        <material id="9" especular="1.0" difusidad="0.8" reflexion ="0.0" transmision="0.0" ambiente="0.3" refraccion="0.0" power="60">
+            <color r="0.0" g="1.0" b="0.0" a="1.0"></color>
+        </material>
+		
+    </materiales>
+    
+    <elementos>
+	
+		<!-- Esfera transparente -->
+		<esfera radio="3.0" material="1">
+            <posicion x="-3.0" y="-0.5" z="-5.0"></posicion>
+        </esfera>
+		
+		      
+        <!-- Esfera espejada -->
+        <esfera radio="2.0" material="2">
+            <posicion x="5.5" y="-1.0" z="-5.0"></posicion>
+        </esfera>
+		
+		
+		<!-- Cilindro Phong -->
+        <cilindro radio="1.5" altura="3.0" material = "0">
+            <posicion x="-1.0" y="-1.5" z="-4.0"></posicion>
+            <direccion x="0.0" y="1.0" z="0.0"></direccion>
+        </cilindro>	
+		
+		
+		<!-- Mesa -->
+	
+        <triangulo material="8">
+            <punto x="-8.0" y="-3.0" z="-2.0"></punto>
+            <punto x="8.0" y="-3.0" z="-2.0"></punto>
+            <punto x="-8.0" y="-3.0" z="-8.0"></punto>
+        </triangulo>
+		
+        <triangulo material="8">
+            <punto x="-8.0" y="-3.0" z="-8.0"></punto>
+            <punto x="8.0" y="-3.0" z="-2.0"></punto>
+            <punto x="8.0" y="-3.0" z="-8.0"></punto>
+        </triangulo>
+		
+		<!-- Mesa Adelante -->
+		
+        <triangulo material="8">
+            <punto x="8.0" y="-8.0" z="-2.0"></punto>
+            <punto x="8.0" y="-3.0" z="-2.0"></punto>
+            <punto x="-8.0" y="-3.0" z="-2.0"></punto>
+        </triangulo>
+		
+        <triangulo material="8">
+            <punto x="-8.0" y="-3.0" z="-2.0"></punto>
+            <punto x="8.0" y="-8.0" z="-2.0"></punto>
+            <punto x="-8.0" y="-8.0" z="-2.0"></punto>
+        </triangulo>
+		
+		<!-- Mesa Izquierda -->
+		
+		<triangulo material="8">
+            <punto x="-8.0" y="-8.0" z="-2.0"></punto>
+            <punto x="-8.0" y="-3.0" z="-2.0"></punto>
+            <punto x="-8.0" y="-3.0" z="-8.0"></punto>
+        </triangulo>
+		
+        <triangulo material="8">
+            <punto x="-8.0" y="-3.0" z="-8.0"></punto>
+            <punto x="-8.0" y="-8.0" z="-8.0"></punto>
+            <punto x="-8.0" y="-8.0" z="-2.0"></punto>
+        </triangulo>
+		
+		<!-- Mesa Derecha -->
+		
+		<triangulo material="8">
+            <punto x="8.0" y="-8.0" z="-2.0"></punto>
+            <punto x="8.0" y="-3.0" z="-2.0"></punto>
+            <punto x="8.0" y="-3.0" z="-8.0"></punto>
+        </triangulo>
+		
+        <triangulo material="8">
+            <punto x="8.0" y="-3.0" z="-8.0"></punto>
+            <punto x="8.0" y="-8.0" z="-8.0"></punto>
+            <punto x="8.0" y="-8.0" z="-2.0"></punto>
+        </triangulo>
+		
+		<!-- Cuarto -->
+        
+        <plano material="3">
+            <punto  x="0" y="0" z="-10"></punto>
+            <normal x="0.0" y="0.0" z="1.0" ></normal>
+        </plano>
+		
+        <plano material="4">
+            <punto  x="-10.0" y="0" z="-5"></punto>
+            <normal x="1.0" y="0.0" z="0.0" ></normal>
+        </plano>
+		
+        <plano material="5">
+            <punto  x="10.0" y="0" z="-5"></punto>
+            <normal x="-1.0" y="0.0" z="0.0" ></normal>
+        </plano>
+		
+        <plano material="7">
+            <punto  x="0" y="-8" z="-5"></punto>
+            <normal x="0.0" y="1.0" z="0.0" ></normal>
+        </plano>
+		
+
+		<plano material="6">
+            <punto  x="0" y="8" z="-5"></punto>
+            <normal x="0.0" y="-1.0" z="0.0" ></normal>
+        </plano>
+		
+        <plano material="6">
+            <punto  x="0" y="0" z="20"></punto>
+            <normal x="0.0" y="0.0" z="-1.0" ></normal>
+        </plano>
+		
+		
+        <luz>
+            <posicion x="2.0" y="7.0" z="-9.0"></posicion>
+            <intensidad r="0.8" g="0.4" b="0.0"></intensidad>
+        </luz>
+		
+		<luz>
+            <posicion x="5.0" y="5.0" z="-3.0"></posicion>
+            <intensidad r="0.3" g="0.0" b="0.8"></intensidad>
+        </luz>
+		
+       
+
+
+    </elementos>
+</escena>
+
+ 
+		
+		
+
+	
